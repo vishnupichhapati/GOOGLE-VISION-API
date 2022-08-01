@@ -11,7 +11,7 @@ image_file =  st.file_uploader("Upload Images (less than 1mb)", type=["png","jpg
 img = Image.open(image_file)
 st.image(image_file,width=250,caption='Uploaded image')
 byte_io = BytesIO()
-img.save(byte_io, 'BYTES')#PNG
+img.save(byte_io, 'PNG')#PNG
 imag = byte_io.getvalue()
 button=st.button('Click me',help='To give the image')
 if image_file and button:
