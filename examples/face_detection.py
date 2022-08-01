@@ -1,6 +1,6 @@
 import argparse
 import io
-import streamlit
+import streamlit as st
 from google.cloud import vision
 from google.cloud.vision import types
 image_file = st.file_uploader("Choose an imamge file")
