@@ -21,7 +21,7 @@ if image_file and button:
 
     # Loads the image into memory
     
-        with io.open(image, 'rb') as image_file:
+        with io.open(img, 'rb') as image_file:
             content = image_file.read()
 
         image = types.Image(content=content)
