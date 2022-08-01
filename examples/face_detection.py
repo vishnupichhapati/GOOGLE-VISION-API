@@ -7,8 +7,7 @@ import json
 import streamlit as st
 from google.cloud import vision
 from google.cloud.vision import types
-picture = st.camera_input("Take a picture")
-image_file = st.image(picture)
+image_file =  st.file_uploader("Upload Images (less than 1mb)", type=["png","jpg","jpeg"])
 img = Image.open(image_file)
 st.image(image_file,width=250,caption='Uploaded image')
 byte_io = BytesIO()
