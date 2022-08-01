@@ -26,6 +26,6 @@ if image_file and button:
 
     if __name__ == '__main__':
         parser = argparse.ArgumentParser()
-        parser.add_argument('-image_file',image_file, help='The image you\'d like to label.')
+        parser.add_argument('-image_file', help='The image you\'d like to label.')
         args = parser.parse_args()
         st.text(main(args.image_file))
