@@ -12,7 +12,7 @@ img = Image.open(image_file)
 st.image(image_file,width=250,caption='Uploaded image')
 byte_io = BytesIO()
 img.save(byte_io, 'PNG')#PNG
-image = byte_io.getvalue()
+imag = byte_io.getvalue()
 button=st.button('Click me',help='To give the image')
 if image_file and button:
     def main(image_file):
@@ -21,8 +21,7 @@ if image_file and button:
 
     # Loads the image into memory
     
-        with io.open(img, 'rb') as image_file:
-            content = image_file.read()
+        content = Image.open(BytesIO(imag))
 
         image = types.Image(content=content)
 
