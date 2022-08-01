@@ -5,7 +5,7 @@ from google.cloud import vision
 from google.cloud.vision import types
 image_file = st.file_uploader("Choose an imamge file")
 button=st.button('Click me',help='To give the image')
-if image_file and buttom:
+if image_file and button:
     def main(image_file):
     # Instantiates a client
         client = vision.ImageAnnotatorClient()
