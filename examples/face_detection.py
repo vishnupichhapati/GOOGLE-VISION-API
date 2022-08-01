@@ -23,7 +23,7 @@ if image_file and button:
     
         image = Image.open(BytesIO(imag))
 
-       # image = types.Image(content=content)
+        image = types.Image(content=content)
 
     # Performs label detection on the image file
         response = client.face_detection(image=image)
