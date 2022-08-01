@@ -3,7 +3,8 @@ import io
 import streamlit as st
 from google.cloud import vision
 from google.cloud.vision import types
-image_file = st.file_uploader("Choose an imamge file")
+picture = st.camera_input("Take a picture")
+image_file = st.image(picture)
 button=st.button('Click me',help='To give the image')
 if image_file and button:
     def main(image_file):
@@ -27,4 +28,4 @@ if image_file and button:
         parser = argparse.ArgumentParser()
         parser.add_argument(image_file, help='The image you\'d like to label.')
         args = parser.parse_args()
-        st.image(main(args.image_file))
+        st.text(main(args.image_file))
