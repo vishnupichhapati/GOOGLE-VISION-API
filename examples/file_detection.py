@@ -44,7 +44,7 @@ def load_image(image_file):
 def main():
 	#image = https://ninjaforms.com/extensions/file-uploads/
 	st.image('images/file-uploads1.jpg', use_column_width=True)
-	st.title("UPLOAD FILE")
+	st.title("FILE DETECTION")
 
 	menu = ["Image","Dataset","DocumentFiles","Details About"]
 	choice = st.sidebar.selectbox("SELECT THE FILE TYPE",menu)
