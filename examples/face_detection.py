@@ -73,8 +73,8 @@ def main():
 				df = pd.read_csv(data_file)
 				st.dataframe(df)
 
-	elif choice == "Document Files":
-		st.subheader("Document Files")
+	elif choice == "DocumentFiles":
+		st.subheader("DocumentFiles")
 		docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
 		if st.button("Process"):
 			if docx_file is not None:
