@@ -109,7 +109,7 @@ def main():
 		st.subheader("About")
 		st.info("Built with Streamlit")
 		st.info("@vishnupichhapti")
-		st.text("Vishnu Vardhan")
+		#st.text("Vishnu Vardhan")
 
 
 
