@@ -42,9 +42,9 @@ def load_image(image_file):
 
 
 def main():
-	st.title("File Upload Tutorial")
+	st.title("UPLOAD FILE")
 
-	menu = ["Home","Dataset","DocumentFiles","About"]
+	menu = ["Home","Dataset","DocumentFiles","Details About"]
 	choice = st.sidebar.selectbox("Menu",menu)
 
 	if choice == "Home":
