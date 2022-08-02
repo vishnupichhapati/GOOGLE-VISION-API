@@ -74,7 +74,7 @@ def main():
 				st.dataframe(df)
 
 	elif choice == "Document Files":
-		st.subheader("DocumentFiles")
+		st.subheader("Document Files")
 		docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
 		if st.button("Process"):
 			if docx_file is not None:
