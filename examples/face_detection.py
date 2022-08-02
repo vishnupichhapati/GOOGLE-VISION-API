@@ -47,8 +47,8 @@ def main():
 	menu = ["Image","Dataset","DocumentFiles","Details About"]
 	choice = st.sidebar.selectbox("SELECT THE FILE TYPE",menu)
 
-	if choice == "Home":
-		st.subheader("Home")
+	if choice == "Image":
+		st.subheader("Image")
 		image_file = st.file_uploader("Upload Image",type=['png','jpeg','jpg'])
 		if image_file is not None:
 		
@@ -73,7 +73,7 @@ def main():
 				df = pd.read_csv(data_file)
 				st.dataframe(df)
 
-	elif choice == "DocumentFiles":
+	elif choice == "Document Files":
 		st.subheader("DocumentFiles")
 		docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
 		if st.button("Process"):
