@@ -9,7 +9,7 @@ from PyPDF2 import PdfFileReader
 import pdfplumber
 
 st.set_page_config(layout="wide")
-#st.sidebar.image('images/Azure_Image.png', width=300)
+st.sidebar.image('images/download.png', width=300)
 st.sidebar.header('A website using streamlit')
 st.sidebar.markdown('Image,Dataset,DocumentFiles')
 
@@ -19,7 +19,7 @@ st.sidebar.markdown('Image,Dataset,DocumentFiles')
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
 st.sidebar.markdown('---')
-st.sidebar.write('P.Vishnu Vardhan Reddy | pichhapativishnuvardhan@gmail.com https://github.com/vishnupichhapati')
+st.sidebar.write('PICHHAPATI VISHNU VARDHAN REDDY | pichhapativishnuvardhan@gmail.com https://github.com/vishnupichhapati')
 def read_pdf(file):
 	pdfReader = PdfFileReader(file)
 	count = pdfReader.numPages
