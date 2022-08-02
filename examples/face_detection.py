@@ -106,10 +106,10 @@ def main():
 					st.write(raw_text)
 
 	else:
-		st.subheader("About")
+		st.subheader("DETAILS")
 		st.info("Built with Streamlit")
-		st.info("Jesus Saves @JCharisTech")
-		st.text("Jesse E.Agbe(JCharis)")
+		st.info("@vishnupichhapti")
+		st.text("Vishnu Vardhan")
 
 
 
