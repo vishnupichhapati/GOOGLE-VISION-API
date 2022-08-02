@@ -42,8 +42,8 @@ def load_image(image_file):
 
 
 def main():
-	image = https://ninjaforms.com/extensions/file-uploads/
-	st.image(image, use_column_width=True)
+	#image = https://ninjaforms.com/extensions/file-uploads/
+	st.image('file-uploads1.jpg', use_column_width=True)
 	st.title("UPLOAD FILE")
 
 	menu = ["Image","Dataset","DocumentFiles","Details About"]
