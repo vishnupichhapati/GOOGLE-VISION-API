@@ -43,7 +43,7 @@ def load_image(image_file):
 
 def main():
 	#image = https://ninjaforms.com/extensions/file-uploads/
-	st.image('file-uploads1.jpg', use_column_width=True)
+	st.image('images/file-uploads1.jpg', use_column_width=True)
 	st.title("UPLOAD FILE")
 
 	menu = ["Image","Dataset","DocumentFiles","Details About"]
