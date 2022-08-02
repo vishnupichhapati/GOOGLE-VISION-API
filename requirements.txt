@@ -1,2 +1,2 @@
 docx2txt
-
+PyPDF2
