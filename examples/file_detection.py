@@ -8,7 +8,18 @@ from PIL import Image
 from PyPDF2 import PdfFileReader
 import pdfplumber
 
+st.set_page_config(layout="wide")
+#st.sidebar.image('images/Azure_Image.png', width=300)
+st.sidebar.header('A website using Azure Api')
+st.sidebar.markdown('Face Api,Translator Api')
 
+
+
+
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
+
+st.sidebar.markdown('---')
+st.sidebar.write('P.Vishnu Vardhan Reddy | pichhapativishnuvardhan@gmail.com https://github.com/vishnupichhapati')
 def read_pdf(file):
 	pdfReader = PdfFileReader(file)
 	count = pdfReader.numPages
