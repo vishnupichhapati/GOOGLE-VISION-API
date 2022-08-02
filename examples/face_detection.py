@@ -45,7 +45,7 @@ def main():
 	st.title("UPLOAD FILE")
 
 	menu = ["Home","Dataset","DocumentFiles","Details About"]
-	choice = st.sidebar.selectbox("Menu",menu)
+	choice = st.sidebar.selectbox("SELECT THE FILE TYPE",menu)
 
 	if choice == "Home":
 		st.subheader("Home")
