@@ -44,7 +44,7 @@ def load_image(image_file):
 def main():
 	st.title("UPLOAD FILE")
 
-	menu = ["Home","Dataset","DocumentFiles","Details About"]
+	menu = ["Image","Dataset","DocumentFiles","Details About"]
 	choice = st.sidebar.selectbox("SELECT THE FILE TYPE",menu)
 
 	if choice == "Home":
